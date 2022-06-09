@@ -29,6 +29,7 @@
         "psr-4": {
             "App\\": "app/",
             "Laracon\\": "src/",
+            "UI\\": "UI/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }

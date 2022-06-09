@@ -180,6 +180,7 @@ return [
         \Laracon\Order\Providers\OrderServiceProvider::class,
         \Laracon\Payment\Providers\PaymentServiceProvider::class,
         \Laracon\Shipping\Providers\ShippingServiceProvider::class,
+        \UI\Admin\Providers\AdminServiceProvider::class
     ],
 
     /*
