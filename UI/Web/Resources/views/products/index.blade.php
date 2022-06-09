@@ -1,4 +1,4 @@
-@extends('admin::layout')
+@extends('web::layout')
 @section('body')
     <main role="main">
 
@@ -18,7 +18,7 @@
 
                 <div class="row">
                     @foreach($products as $product)
-                        @include('admin::products.includes.product', ['product' => $product])
+                        @include('web::products.includes.product', ['product' => $product])
                     @endforeach
                 </div>
             </div>

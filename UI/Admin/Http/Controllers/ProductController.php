@@ -52,9 +52,17 @@ class ProductController extends Controller
      * @param  \Laracon\Inventory\Domain\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($id)
     {
-        //
+        $dto      = new RequestDto(
+            uri: "/inventory-module/products",
+            parameters: [ 'id' => $id ]
+        );
+
+        $data     = $this->httpRequestContract->send($dto);
+        $products = $data['data'] ?? [];
+
+        return view('admin::products.show', ['products' => $products]);
     }
 
     /**
