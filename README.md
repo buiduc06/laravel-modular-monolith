@@ -66,3 +66,4 @@ sail exec app deptrac --formatter=graphviz-image --output="./deptrac.png"
 
 
 https://getbootstrap.com/docs/4.3/examples/
+https://gitlab.com/karsegard/backpack-devtools

@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\User;
 use Illuminate\Support\Facades\Event;
 use Laracon\Inventory\Contracts\DataTransferObjects\ProductDto;
 use Laracon\Inventory\Contracts\ProductService;
@@ -8,13 +7,9 @@ use Laracon\Order\Contracts\Events\OrderFulfilled;
 use Laracon\Order\Domain\Models\{Cart, TaxRate};
 use Laracon\Payment\Contracts\PaymentService;
 use Laravel\Sanctum\Sanctum;
+use UI\Admin\Models\User;
 
-use function Pest\Laravel\{
-    assertDatabaseCount,
-    assertDatabaseHas,
-    mock,
-    postJson,
-};
+use function Pest\Laravel\{assertDatabaseCount, assertDatabaseHas, mock, postJson,};
 
 uses(Tests\TestCase::class);
 

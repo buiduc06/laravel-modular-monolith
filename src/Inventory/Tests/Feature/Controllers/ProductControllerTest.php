@@ -1,9 +1,9 @@
 <?php
 
-use App\Models\User;
 use Illuminate\Testing\Fluent\AssertableJson;
 use Laracon\Inventory\Domain\Models\Product;
 use Laravel\Sanctum\Sanctum;
+use UI\Admin\Models\User;
 
 use function Pest\Laravel\getJson;
 

@@ -2,9 +2,9 @@
 
 namespace Laracon\Order\Application\Policies;
 
-use App\Models\User;
 use Illuminate\Auth\Access\HandlesAuthorization;
 use Laracon\Order\Domain\Models\Order;
+use UI\Admin\Models\User;
 
 class OrderPolicy
 {
